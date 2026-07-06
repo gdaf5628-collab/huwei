@@ -1,0 +1,160 @@
+.box{
+width: -50%;
+height: 100%;
+background-color: white;
+justify-content: center;
+align-items: center;
+border-radius: 50px;/*圓角*/
+margin-left: 50px;
+margin-right: 50px;
+}
+
+.header-bar {
+              
+  padding: 5px 5%;              
+  border-bottom: 2px solid #eb4f33; 
+}
+
+navber{
+display: flex;
+justify-content: space-between; 
+align-items: center;
+}
+
+.li-links{
+display: flex;
+padding-left: 0;
+margin-left: 0;
+flex-wrap: wrap;
+justify-content:flex-start;
+list-style: none;
+}
+
+.li-links li{
+justify-content:flex-end;
+padding: 10px;
+margin-left: 50px;
+white-space: nowrap;
+}
+
+.li-links a{
+text-decoration: none;
+color: #eb4f33;
+font-size: 20px;
+font-weight: 700;
+}
+
+.li-links :hover{
+opacity: 0.8;
+transition: color 0.3s;
+}
+
+.h1{
+text-indent: 10px;
+}
+
+.h1 a{
+text-decoration: none;
+
+/*下面是漸層文字代碼*/
+background: linear-gradient(to top,  #eb4f33, #ffbf00);
+background-clip: text;
+color: transparent;
+font-size: 50px;
+}
+
+.h1 :hover{
+opacity: 0.8;
+transition: color 0.3s;
+}
+
+h2{
+color: rgb(151, 131, 216);
+text-align: center;
+}
+
+h3{
+color: chocolate ;
+margin-left: 50px;
+margin-right: 50px;
+font-size: 20px;
+text-align: center;
+}
+
+p{
+margin-left: 50px;
+margin-right: 50px;
+text-align: center;
+}
+
+p.exl{
+border:1px solid #ffbf00;
+padding:30px 5px 25px 10px
+}
+
+.red {
+  color: rgb(238, 16, 16);
+  font-size: 18px;
+}
+
+img{
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/*w3schools*/
+/*輪播圖容器*/
+* {box-sizing: border-box}
+
+.slideshow-container{
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides{
+  display: none;
+}
+
+/*下一張、上一張按鈕*/
+.prev, .next{
+  cursor: pointer; /*改變滑鼠游標:手指*/
+  position: absolute; /*絕對定位*/
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none; /*禁止選取*/
+}
+
+ /*下一步按鈕移至右側*/
+.next{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover{
+  background-color: #717171;
+}
